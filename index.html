@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ accordion</title>
+
+  <!-- Font -->
+  <link rel="stylesheet" type="text/css" href="./style/font.css">
+
+  <!-- Tailwind play cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="src/tailwind.config.js"></script>
+
+  <!-- Alpine.js core  -->
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="./style/base.css">
+
+</head>
+<body class="bg-pink text-purple-dark antialiased">
+  <div class="absolute top-0 inset-x-0">
+    <img class="object-cover w-full h-full md:hidden" src="./assets/images/background-pattern-mobile.svg" alt="mobile background image" aria-hidden="true">
+    <img class="hidden md:block md:object-cover md:w-full md:h-full" src="./assets/images/background-pattern-desktop.svg" alt="desktop background image" aria-hidden="true">
+  </div>
+  <main class="relative mt-36 mx-6 bg-white rounded-lg px-6 pt-6 md:max-w-xl lg:mx-auto">
+    <div class="flex items-center gap-6">
+      <img class="w-6" src="./assets/images/icon-star.svg" alt="star">
+      <h1 class="text-3xl font-bold">FAQs</h1>
+    </div>
+    <ul class="divide-y divide-y-pink">
+      <li>
+        <details class="faq mt-6" open>
+          <summary class="w-full cursor-pointer flex gap-4 justify-between font-semibold leading-tight pb-4 group focus:outline-none">
+            <span class="group-hover:text-purple group-focus:text-purple transition ease-out">What is Frontend Mentor, and how will it help me?</span>
+            <span class="grid shrink-0">
+              <img class="col-start-1 row-start-1 opened-img transition ease-out" src="./assets/images/icon-plus.svg" alt="+">
+              <img class="col-start-1 row-start-1 closed-img transition ease-out" src="./assets/images/icon-minus.svg" alt="-">
+            </span>
+          </summary>
+          <p class="text-purple-gray text-sm pt-2 pb-6">
+            Frontend Mentor offers realistic coding challenges to help developers improve their
+            frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
+            all levels and ideal for portfolio building.
+          </p>
+        </details>
+      </li>
+
+      <li>
+        <details class="faq mt-6">
+          <summary class="w-full cursor-pointer flex gap-4 justify-between font-semibold leading-tight pb-4 group focus:outline-none">
+            <span class="group-hover:text-purple group-focus:text-purple transition ease-out">Is Frontend Mentor free?</span>
+            <span class="grid shrink-0">
+              <img class="col-start-1 row-start-1 opened-img transition ease-out" src="./assets/images/icon-plus.svg" alt="+">
+              <img class="col-start-1 row-start-1 closed-img transition ease-out" src="./assets/images/icon-minus.svg" alt="-">
+            </span>
+          </summary>
+          <p class="text-purple-gray text-sm pt-2 pb-6">
+            Yes, Frontend Mentor offers both free and premium coding challenges, with the free
+            option providing access to a range of projects suitable for all skill levels.
+          </p>
+        </details>
+      </li>
+
+      <li>
+        <details class="faq mt-6">
+          <summary class="w-full cursor-pointer flex gap-4 justify-between font-semibold leading-tight pb-4 group focus:outline-none">
+            <span class="group-hover:text-purple group-focus:text-purple transition ease-out">Can I use Frontend Mentor projects in my portfolio?</span>
+            <span class="grid shrink-0">
+              <img class="col-start-1 row-start-1 opened-img transition ease-out" src="./assets/images/icon-plus.svg" alt="+">
+              <img class="col-start-1 row-start-1 closed-img transition ease-out" src="./assets/images/icon-minus.svg" alt="-">
+            </span>
+          </summary>
+          <p class="text-purple-gray text-sm pt-2 pb-6">
+            Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+            way to showcase your skills to potential employers!
+          </p>
+        </details>
+      </li>
+
+      <li>
+        <details class="faq mt-6">
+          <summary class="w-full cursor-pointer flex gap-4 justify-between font-semibold leading-tight pb-4 group focus:outline-none">
+            <span class="group-hover:text-purple group-focus:text-purple transition ease-out">How can I get help if I'm stuck on a Frontend Mentor challenge?</span>
+            <span class="grid shrink-0">
+              <img class="col-start-1 row-start-1 opened-img transition ease-out" src="./assets/images/icon-plus.svg" alt="+">
+              <img class="col-start-1 row-start-1 closed-img transition ease-out" src="./assets/images/icon-minus.svg" alt="-">
+            </span>
+          </summary>
+          <p class="text-purple-gray text-sm pt-2 pb-6">
+            The best place to get help is inside Frontend Mentor's Discord community. There's a help
+            channel where you can ask questions and seek support from other community members.
+          </p>
+        </details>
+      </li>
+
+    </ul>
+  </main>
+  <footer class="fixed bottom-0 inset-x-0 text-center text-xs font-semibold tracking-wide text-purple-dark bg-white/80 py-1 opacity-0 translate-y-2 hover:opacity-100 hover:translate-y-0 focus-within:opacity-100 focus-within:translate-y-0 transform transition ease-in-out duration-150">
+    Challenge by <a class="underline hover:text-purple-gray" href="https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz" target="_blank">Frontend Mentor</a>.
+    Coded by <a class="underline hover:text-purple-gray" href="https://www.frontendmentor.io/profile/wendyhamel" target="_blank">Wendy Hamel</a>.
+  </footer>
+</body>
+</html>
