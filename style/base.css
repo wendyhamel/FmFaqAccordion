@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer components {
+	details summary::-webkit-details-marker {display: none}
 	details.faq > summary > span > img.opened-img { opacity: 100%}
 	details.faq > summary > span > img.closed-img { opacity: 0}
 	details[open].faq > summary > span > img.opened-img { opacity: 0}
