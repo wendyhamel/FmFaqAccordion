@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-family: Work Sans;
+	src: url(../assets/fonts/static/WorkSans-Regular.ttf);
+	font-weight: 400;
+}
+@font-face {
+	font-family: Work Sans;
+	src: url(../assets/fonts/static/WorkSans-SemiBold.ttf);
+	font-style: italic;
+	font-weight: 600;
+}
+@font-face {
+	font-family: Work Sans;
+	src: url(../assets/fonts/static/WorkSans-Bold.ttf);
+	font-weight: 700;
+}
+
 @layer components {
 	details summary::-webkit-details-marker {display: none}
 	details.faq > summary > span > img.opened-img { opacity: 100%}
