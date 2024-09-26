@@ -31,9 +31,9 @@
       <img class="w-6 md:w-10" src="./assets/images/icon-star.svg" alt="star">
       <h1 class="text-3xl font-bold md: text-[3.25rem]">FAQs</h1>
     </div>
-    <ul class="divide-y divide-y-pink md:pt-5">
+    <ul class="md:pt-5">
       <template x-for="question in questions" :key="index">
-        <li>
+        <li class="border-b border-pink last:border-transparent">
           <details class="faq mt-6">
             <summary class="w-full cursor-pointer flex gap-4 items-center justify-between font-semibold leading-tight pb-4 group focus:outline-none md:gap-1">
               <span class="md:text-[1.1rem] group-hover:text-purple group-focus:text-purple transition ease-out" x-text="question.question"></span>
